@@ -9,9 +9,3 @@ body {
 }
 
 
-.triangle {
-
-    border-right: 10px solid yellow;
-    border-bottom: 10px solid transparent;
-    border-top: 10px solid transparent; 
-}
