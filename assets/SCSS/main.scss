@@ -1,8 +1,6 @@
-body {
-    background-color: black;
-
-    section {
-        color: red;
-    }
-}
-
+@import "home";
+@import "about";
+@import "resume";
+@import "work";
+@import "testimonial";
+@import "contact";
