@@ -14,11 +14,15 @@ p {
   font-family: "Ubuntu", sans-serif;
 }
 
-#home {
-  background: yellow;
+#sidebar {
+  background: black;
 }
 
 .logo img {
   height: 50px;
   width: 50px;
+}
+
+#home {
+  background: yellow;
 }/*# sourceMappingURL=main.css.map */
