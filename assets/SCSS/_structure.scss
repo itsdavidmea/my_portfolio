@@ -1,4 +1,12 @@
 // we will write a series of scss files of the entire website 
 main {
     padding-left: 102px;
+
+    > section { // ">" means the section that comes after main 
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
 }
