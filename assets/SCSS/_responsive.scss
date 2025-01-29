@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+    #sidebar {
+        background: darken($secondary, 30%);
+        padding-right: 60px;
+        transform: translateX(-100%); //move to the negative direction horizontally by the amount of your own width 
+        .logo {
+            text-align: left;
+        }
+        &.open {
+            transform: translateX(0);
+        }
+        nav ul li  {
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                span {
+                    display: block;
+                    padding-left: 8px;
+                }
+            }
+            > span {
+                display: none;
+            }
+        }
+
+        .toggle-sidebar {
+            display: flex;
+        }
+        
+    }
+    main {
+        padding-left: 0;
+    }
+}

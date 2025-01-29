@@ -1,3 +1,5 @@
+/* Code to change active page (the page in which the user is in)*/
+
 let navLinks = document.querySelectorAll('nav ul li a'); // this will select all the navlinks in the sidebar
 
 navLinks.forEach((item) => {
@@ -10,4 +12,10 @@ navLinks.forEach((item) => {
        
     })
     
+})
+
+/* Code to see if the sidebar menu is open or not*/
+
+document.querySelector('#sidebar .toggle-sidebar').addEventListener('click', function(){ // do some actions whenever the toggle button is clicked on
+    document.querySelector('#sidebar').classList.toggle('open'); // get its class list and toggle it 
 })
