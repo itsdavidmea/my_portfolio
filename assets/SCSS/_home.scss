@@ -1,7 +1,7 @@
 #home {
     .info {
         padding-top: 281px;
-        padding-left: 160px;
+        padding-left: 200px;
 
         img.profile_pic {
             margin-bottom: 24px;
@@ -9,11 +9,16 @@
         h1 {
             margin-bottom: 24px;
             span {
-                color: $gray;
+                color: $grey;
             }
         }
         h2 {
-            color: $gray;
+            color: $grey;
+            margin-bottom: 16px;
+        }
+        p {
+            max-width: 430px;
+            margin-bottom: 74px;
         }
     }
 

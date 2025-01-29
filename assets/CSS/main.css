@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url();
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,11 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 48px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -171,8 +177,19 @@ main > section.active {
 #home .info img.profile_pic {
   margin-bottom: 24px;
 }
+#home .info h1 {
+  margin-bottom: 24px;
+}
 #home .info h1 span {
   color: #B6B7BA;
+}
+#home .info h2 {
+  color: #B6B7BA;
+  margin-bottom: 16px;
+}
+#home .info p {
+  max-width: 430px;
+  margin-bottom: 74px;
 }
 
 #my_work {
