@@ -1,3 +1,21 @@
 #home {
-    background: gray;
+    .info {
+        padding-top: 281px;
+        padding-left: 160px;
+
+        img.profile_pic {
+            margin-bottom: 24px;
+        }
+        h1 {
+            margin-bottom: 24px;
+            span {
+                color: $gray;
+            }
+        }
+        h2 {
+            color: $gray;
+        }
+    }
+
+
 }

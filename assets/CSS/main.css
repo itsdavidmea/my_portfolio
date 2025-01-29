@@ -10,6 +10,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
 }
 
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
 p {
   font-family: "Ubuntu", sans-serif;
 }
@@ -159,8 +164,15 @@ main > section.active {
   display: block;
 }
 
-#home {
-  background: gray;
+#home .info {
+  padding-top: 281px;
+  padding-left: 200px;
+}
+#home .info img.profile_pic {
+  margin-bottom: 24px;
+}
+#home .info h1 span {
+  color: #B6B7BA;
 }
 
 #my_work {
