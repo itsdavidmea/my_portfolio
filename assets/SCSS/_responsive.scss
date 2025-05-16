@@ -1,6 +1,18 @@
+@media (max-width: 991px) {
+    main {
+        padding-left: 0;
+        > section {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+    }
+}
+
+
 @media (max-width: 768px) {
     #sidebar {
         background: darken($secondary, 30%);
+        z-index: 10;
         padding-right: 60px;
         transform: translateX(-100%); //move to the negative direction horizontally by the amount of your own width 
         .logo {
@@ -29,7 +41,40 @@
         }
         
     }
-    main {
-        padding-left: 0;
+
+    h1 {
+        font-size: 36px;
+    }
+
+    
+
+    #home {
+        .info {
+            padding-top: 90px;
+            .field {
+                h2 {
+                    font-size: 20px;
+                }
+                
+            }
+
+            .btn-custom-blue {
+                margin-top: -20px;
+                font-size: 16px;
+            }
+
+            .socials {
+                margin-top: 30px;
+                ul {
+                    justify-content: space-between;
+                   
+                }
+            }
+            
+        }
+
+        .image {
+            margin-top: 50px;
+        }
     }
 }

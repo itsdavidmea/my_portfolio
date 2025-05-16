@@ -17,6 +17,7 @@
         justify-content: center; // horizontally center the 3 lines in it's div class (box) 
         align-items: center; // vertically center the 3 lines in it's div class (box)
         right: -45px;
+        z-index: 10;
     }
 
     .logo {

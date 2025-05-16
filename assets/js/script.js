@@ -19,3 +19,18 @@ navLinks.forEach((item) => {
 document.querySelector('#sidebar .toggle-sidebar').addEventListener('click', function(){ // do some actions whenever the toggle button is clicked on
     document.querySelector('#sidebar').classList.toggle('open'); // get its class list and toggle it 
 })
+
+var options = {
+    strings: ["Software Engineering student"],
+    typeSpeed: 50,
+    backSpeed: 25,
+    
+    
+    };
+    var typed = new Typed('.field h2', options);
+
+    for (let i = 1; i <= 15; i++) {
+        let meteor = document.createElement('span');
+        meteor.classList = 'meteor';
+        document.querySelector('#home .meteor-shower').append(meteor);
+    }

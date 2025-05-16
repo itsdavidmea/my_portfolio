@@ -1,26 +1,155 @@
 #home {
+
+    background-image: url('../images/spiral.png');
+    background-repeat: no-repeat;
+    background-position: 40vw -24px;
     .info {
-        padding-top: 281px;
-        padding-left: 200px;
+        // padding-top: 170px;
+        // padding-left: 20px;
+        padding-top: 10rem; // Use rem for padding
+        padding-left: 1.25rem;
 
         img.profile_pic {
-            margin-bottom: 24px;
+            margin-bottom: 1.5rem; // Use rem for spacing
         }
+    
         h1 {
-            margin-bottom: 24px;
+            font-size: 3rem; // Use rem for font size
+            margin-bottom: 1.5rem;
+    
             span {
                 color: $grey;
+                font-size: 2.5rem; // Adjust span font size
             }
         }
-        h2 {
-            color: $grey;
-            margin-bottom: 16px;
+        .field {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+    
+            h2 {
+                color: $grey;
+                margin: 0;
+                font-size: 1.5rem; // Adjust font size
+            }
+    
+            span {
+                font-size: 1.3rem;
+                margin-left: 0.2rem;
+            }
         }
+    
         p {
-            max-width: 430px;
-            margin-bottom: 74px;
+            max-width: 27rem; // Use rem for width
+            margin-bottom: 4.5rem;
+            font-size: 1rem; // Adjust paragraph font size
+        }
+        .socials {
+            margin-top: 50px;
+            
+
+            ul {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                flex-wrap: wrap;
+
+                li {
+                    margin-right: 8px;
+
+                    a {
+                        text-decoration: none;
+                        padding: 9px 11px;
+                        align-items: center;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            background: $secondary;
+                            border-radius: 6px;
+
+                            span, 
+                            i {
+                                color: #fff;
+                            }
+                        }
+
+                        i {
+                            font-size: 18px;
+                            margin-right: 8px;
+                            color: $grey;
+                            transition: all 0.3s;
+                        }
+
+                        span {
+                        
+                            color: $secondary_grey;
+                            
+                        }
+                    }
+
+                
+
+                }
+            }
         }
     }
 
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+      
+    }
+    .image img {
+        max-width: 100%; // Ensures the image does not exceed the width of its container
+        height: auto;    // Maintains the aspect ratio of the image
+        display: block;  // Removes any inline spacing issues
+        margin: 0 auto;  // Centers the image horizontally if needed
+        transform: scale(0.9);
+    
+        
+
+    }
+
+    .meteor-shower {
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+        right: 0;
+        top: 0;
+        z-index: -1;
+
+        @for $i from 1 through 15 {
+
+            .meteor:nth-child(#{$i}) {
+                position: absolute;
+                background-image: url('../images/meteor.png');
+                width: 60px;
+                height: 49px;
+                top: #{random(80) + 'vh'};
+                left: #{random(80) + 'vw'};
+                animation: meteor  #{random(5000) + 3000 + 'ms'} linear infinite;
+                animation-delay: #{random(5000) + 'ms'};
+                opacity: 0;
+
+            }
+        }
+
+        @keyframes meteor {
+            0% {
+                transform: translate(300px, -300px);
+                opacity: 1;
+            }
+
+            30% {
+                transform: translate(-300px, 300px);
+                opacity: 0;
+            }
+        }
+
+    }
 
 }

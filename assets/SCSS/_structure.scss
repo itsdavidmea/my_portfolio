@@ -4,6 +4,8 @@ main {
 
     > section { // ">" means the section that comes after main 
         display: none;
+        padding-left: 100px;
+        padding-right: 100px;
 
         &.active {
             display: block;

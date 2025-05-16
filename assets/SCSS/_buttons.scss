@@ -1,4 +1,37 @@
 
 .btn-custom-blue {
+    display: inline-block;
+    background-color: #262F48;
+    padding: 10px 52px;
+    text-decoration: none;
+    color: $primary;
+    border-radius: 8px;
+    z-index: 1;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
 
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 100px;
+        width: 100px;
+        background: $primary ;
+        transform: translate(-50%, -50%) scale(0);
+        border-radius: 50%;
+        z-index: -1;
+        opacity: .3;
+        transition: all 0.3s;
+    }
+
+    &:hover {
+        color: white;
+
+        &:before {
+            transform: translate(-50%, -50%) scale(2);
+        }
+        
+    }
 }
