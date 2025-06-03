@@ -35,3 +35,10 @@
         
     }
 }
+
+
+
+.btn-custom-dark {
+    @extend .btn-custom-blue; // will copy all the content of the blue button 
+    background: $secondary;
+}

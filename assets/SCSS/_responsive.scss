@@ -1,15 +1,21 @@
 @media (max-width: 991px) {
-    main {
-        padding-left: 0;
-        > section {
-            padding-right: 30px;
-            padding-left: 30px;
-        }
-    }
+    
 }
 
+@media (max-width: 1199px) { //0 to 1199px 
+     #about_me {
+        .language-skills .languages-key-skills {
+            padding-right: 12px;
+        }
+     }
+}
 
-@media (max-width: 768px) {
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+@media (max-width: 767px) {
     #sidebar {
         background: darken($secondary, 30%);
         z-index: 10;
@@ -46,8 +52,6 @@
         font-size: 36px;
     }
 
-    
-
     #home {
         .info {
             padding-top: 90px;
@@ -75,6 +79,32 @@
 
         .image {
             margin-top: 50px;
+        }
+    }
+
+    main {
+        padding-left: 0;
+
+        > section header.has-bg img {
+            transform: scale(0.8);
+        }
+    }
+
+    #about_me {
+        .hero .info .buttons {
+            flex-direction: column;
+            
+        }
+
+
+
+        a {
+            width: 100%;
+            text-align: center;
+
+            &:first-child {
+                margin-bottom: 16px;
+            }
         }
     }
 }

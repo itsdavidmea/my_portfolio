@@ -4,11 +4,26 @@ main {
 
     > section { // ">" means the section that comes after main 
         display: none;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 32px;
+        padding-right: 32px;
 
         &.active {
             display: block;
         }
+
+        &:not(#home) { // all pages execpt home will have a paading top of 64px 
+            padding-top: 64px;
+        }
+
+        header.has-bg {
+            position: relative;
+
+            img {
+                position: absolute;
+                left: -50px;
+            }
+        }
+
+        
     }
 }
