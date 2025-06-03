@@ -4,11 +4,12 @@
    
 
     .hero {
-        margin-left: 32px;
-        margin-right: 32px;
+        margin-left: 20px;
+        margin-right: 20px;
         .image {
            
             img {
+                
                 max-width: 100%;
                 height: auto;
             
@@ -132,7 +133,7 @@
                 width: 15px;
                 height: 15px;
                 border-radius: 4px;
-                background: $primary;
+                background: $secondary;
                 transform: rotate(40deg);
             }
 
@@ -142,8 +143,15 @@
                 width: 15px;
                 height: 15px;
                 border-radius: 4px;
-                background: $primary;
+                background: $secondary;
                 transform: rotate(50deg);
+            }
+
+            &.fill {
+               &:before,
+               &:after {
+                    background: $primary;
+               } 
             }
         }
     }
