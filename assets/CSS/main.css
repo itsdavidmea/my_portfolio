@@ -12,7 +12,7 @@ ul {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }
@@ -194,10 +194,32 @@ main > section:not(#home) {
 }
 main > section header.has-bg {
   position: relative;
+  display: inline-flex;
 }
 main > section header.has-bg img {
   position: absolute;
   left: -50px;
+}
+main > section header.custom {
+  text-align: center;
+  position: relative;
+  margin-bottom: 42px;
+}
+main > section header.custom::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #1E1E20;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+main > section header.custom h2 {
+  display: inline-block;
+  padding: 0 24px;
+  background-color: #151516;
 }
 
 #home {
@@ -301,10 +323,10 @@ main > section header.has-bg img {
   background-image: url("../images/meteor.png");
   width: 60px;
   height: 49px;
-  top: 74vh;
-  left: 64vw;
-  animation: meteor 6704ms linear infinite;
-  animation-delay: 1572ms;
+  top: 48vh;
+  left: 49vw;
+  animation: meteor 5377ms linear infinite;
+  animation-delay: 4904ms;
   opacity: 0;
 }
 #home .meteor-shower .meteor:nth-child(2) {
@@ -312,10 +334,10 @@ main > section header.has-bg img {
   background-image: url("../images/meteor.png");
   width: 60px;
   height: 49px;
-  top: 4vh;
-  left: 18vw;
-  animation: meteor 6303ms linear infinite;
-  animation-delay: 2838ms;
+  top: 75vh;
+  left: 3vw;
+  animation: meteor 6196ms linear infinite;
+  animation-delay: 254ms;
   opacity: 0;
 }
 #home .meteor-shower .meteor:nth-child(3) {
@@ -323,10 +345,10 @@ main > section header.has-bg img {
   background-image: url("../images/meteor.png");
   width: 60px;
   height: 49px;
-  top: 48vh;
-  left: 24vw;
-  animation: meteor 4983ms linear infinite;
-  animation-delay: 1462ms;
+  top: 66vh;
+  left: 13vw;
+  animation: meteor 6800ms linear infinite;
+  animation-delay: 2078ms;
   opacity: 0;
 }
 #home .meteor-shower .meteor:nth-child(4) {
@@ -334,10 +356,10 @@ main > section header.has-bg img {
   background-image: url("../images/meteor.png");
   width: 60px;
   height: 49px;
-  top: 31vh;
-  left: 49vw;
-  animation: meteor 6821ms linear infinite;
-  animation-delay: 2035ms;
+  top: 10vh;
+  left: 48vw;
+  animation: meteor 3370ms linear infinite;
+  animation-delay: 1000ms;
   opacity: 0;
 }
 #home .meteor-shower .meteor:nth-child(5) {
@@ -345,10 +367,10 @@ main > section header.has-bg img {
   background-image: url("../images/meteor.png");
   width: 60px;
   height: 49px;
-  top: 57vh;
-  left: 31vw;
-  animation: meteor 6697ms linear infinite;
-  animation-delay: 2635ms;
+  top: 64vh;
+  left: 12vw;
+  animation: meteor 4116ms linear infinite;
+  animation-delay: 4582ms;
   opacity: 0;
 }
 #home .meteor-shower .meteor:nth-child(6) {
@@ -356,10 +378,10 @@ main > section header.has-bg img {
   background-image: url("../images/meteor.png");
   width: 60px;
   height: 49px;
-  top: 34vh;
-  left: 17vw;
-  animation: meteor 6571ms linear infinite;
-  animation-delay: 2357ms;
+  top: 39vh;
+  left: 3vw;
+  animation: meteor 7613ms linear infinite;
+  animation-delay: 4334ms;
   opacity: 0;
 }
 #home .meteor-shower .meteor:nth-child(7) {
@@ -367,10 +389,10 @@ main > section header.has-bg img {
   background-image: url("../images/meteor.png");
   width: 60px;
   height: 49px;
-  top: 7vh;
-  left: 51vw;
-  animation: meteor 6577ms linear infinite;
-  animation-delay: 3082ms;
+  top: 44vh;
+  left: 54vw;
+  animation: meteor 6844ms linear infinite;
+  animation-delay: 2738ms;
   opacity: 0;
 }
 #home .meteor-shower .meteor:nth-child(8) {
@@ -379,9 +401,9 @@ main > section header.has-bg img {
   width: 60px;
   height: 49px;
   top: 28vh;
-  left: 20vw;
-  animation: meteor 4943ms linear infinite;
-  animation-delay: 2633ms;
+  left: 78vw;
+  animation: meteor 6925ms linear infinite;
+  animation-delay: 346ms;
   opacity: 0;
 }
 #home .meteor-shower .meteor:nth-child(9) {
@@ -389,10 +411,10 @@ main > section header.has-bg img {
   background-image: url("../images/meteor.png");
   width: 60px;
   height: 49px;
-  top: 31vh;
-  left: 9vw;
-  animation: meteor 4443ms linear infinite;
-  animation-delay: 4569ms;
+  top: 43vh;
+  left: 15vw;
+  animation: meteor 7328ms linear infinite;
+  animation-delay: 1451ms;
   opacity: 0;
 }
 #home .meteor-shower .meteor:nth-child(10) {
@@ -400,10 +422,10 @@ main > section header.has-bg img {
   background-image: url("../images/meteor.png");
   width: 60px;
   height: 49px;
-  top: 25vh;
-  left: 68vw;
-  animation: meteor 5998ms linear infinite;
-  animation-delay: 3861ms;
+  top: 37vh;
+  left: 35vw;
+  animation: meteor 5882ms linear infinite;
+  animation-delay: 749ms;
   opacity: 0;
 }
 #home .meteor-shower .meteor:nth-child(11) {
@@ -411,10 +433,10 @@ main > section header.has-bg img {
   background-image: url("../images/meteor.png");
   width: 60px;
   height: 49px;
-  top: 30vh;
-  left: 44vw;
-  animation: meteor 3979ms linear infinite;
-  animation-delay: 2623ms;
+  top: 57vh;
+  left: 16vw;
+  animation: meteor 5350ms linear infinite;
+  animation-delay: 753ms;
   opacity: 0;
 }
 #home .meteor-shower .meteor:nth-child(12) {
@@ -422,10 +444,10 @@ main > section header.has-bg img {
   background-image: url("../images/meteor.png");
   width: 60px;
   height: 49px;
-  top: 20vh;
-  left: 31vw;
-  animation: meteor 4263ms linear infinite;
-  animation-delay: 4155ms;
+  top: 46vh;
+  left: 15vw;
+  animation: meteor 7401ms linear infinite;
+  animation-delay: 760ms;
   opacity: 0;
 }
 #home .meteor-shower .meteor:nth-child(13) {
@@ -433,10 +455,10 @@ main > section header.has-bg img {
   background-image: url("../images/meteor.png");
   width: 60px;
   height: 49px;
-  top: 65vh;
-  left: 28vw;
-  animation: meteor 5569ms linear infinite;
-  animation-delay: 1291ms;
+  top: 56vh;
+  left: 71vw;
+  animation: meteor 4858ms linear infinite;
+  animation-delay: 602ms;
   opacity: 0;
 }
 #home .meteor-shower .meteor:nth-child(14) {
@@ -444,10 +466,10 @@ main > section header.has-bg img {
   background-image: url("../images/meteor.png");
   width: 60px;
   height: 49px;
-  top: 8vh;
-  left: 29vw;
-  animation: meteor 3687ms linear infinite;
-  animation-delay: 3946ms;
+  top: 67vh;
+  left: 25vw;
+  animation: meteor 3289ms linear infinite;
+  animation-delay: 168ms;
   opacity: 0;
 }
 #home .meteor-shower .meteor:nth-child(15) {
@@ -455,10 +477,10 @@ main > section header.has-bg img {
   background-image: url("../images/meteor.png");
   width: 60px;
   height: 49px;
-  top: 27vh;
-  left: 10vw;
-  animation: meteor 4135ms linear infinite;
-  animation-delay: 3736ms;
+  top: 73vh;
+  left: 11vw;
+  animation: meteor 5945ms linear infinite;
+  animation-delay: 2795ms;
   opacity: 0;
 }
 @keyframes meteor {
@@ -673,6 +695,114 @@ main > section header.has-bg img {
   transform: scale(1.3);
 }
 
+#my_resume {
+  padding-bottom: 50px;
+  background-image: url(../images/spiral.png);
+  background-repeat: no-repeat;
+  background-position: 30vw 374px;
+}
+#my_resume header.has-bg {
+  margin-bottom: 64px;
+}
+#my_resume .items .item {
+  display: flex;
+}
+#my_resume .items .item:not(:last-child) {
+  margin-bottom: 42px;
+}
+#my_resume .items .item.last .icon i {
+  color: #658DF2;
+}
+#my_resume .items .item.last .box h2 {
+  color: #658DF2;
+}
+#my_resume .items .item:hover .icon,
+#my_resume .items .item:hover .icon:before {
+  background: rgba(11, 44, 128, 0.4);
+}
+#my_resume .items .item:hover .box {
+  background: transparent;
+}
+#my_resume .items .item:hover .box:before {
+  border-right-color: rgba(11, 44, 128, 0.4);
+}
+#my_resume .items .item:hover .box:after {
+  width: 100%;
+}
+#my_resume .items .item .icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1E1E20;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  font-size: 18px;
+  margin-right: 46px;
+  margin-top: 23px;
+  transition: all 0.3s;
+}
+#my_resume .items .item .icon:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 126px;
+  background: #1E1E20;
+  top: 70px;
+}
+#my_resume .items .item .box {
+  padding: 32px;
+  background: rgba(30, 30, 32, 0.75);
+  border-radius: 8px;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s;
+  flex-grow: 1;
+}
+#my_resume .items .item .box:before {
+  content: "";
+  position: absolute;
+  border-right: 9px solid rgba(30, 30, 32, 0.75);
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  left: -9px;
+}
+#my_resume .items .item .box:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 8px;
+  background: rgba(11, 44, 128, 0.4);
+  z-index: -1;
+  transition: all 0.3s;
+}
+#my_resume .items .item .box .year {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 26px;
+}
+#my_resume .items .item .box h2 {
+  margin-bottom: 16px;
+}
+#my_resume .items .item .box p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #B6B7BA;
+  max-width: 345px;
+}
+#my_resume .education {
+  padding-right: 34px;
+}
+#my_resume .experience {
+  padding-left: 34px;
+}
+
 #my_work {
   background: green;
 }
@@ -680,6 +810,9 @@ main > section header.has-bg img {
 @media (max-width: 1199px) {
   #about_me .language-skills .languages-key-skills {
     padding-right: 12px;
+  }
+  #my_resume .experience {
+    margin-top: 100px;
   }
 }
 @media (min-width: 1400px) {
@@ -756,6 +889,29 @@ main > section header.has-bg img {
   }
   #about_me a:first-child {
     margin-bottom: 16px;
+  }
+  #my_resume .items .item {
+    position: relative;
+  }
+  #my_resume .items .item .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    left: -23px;
+    margin-top: 0;
+    background: rgba(30, 30, 32, 0.75);
+  }
+  #my_resume .items .item .icon:before {
+    display: none;
+  }
+  #my_resume .items .item .box:before {
+    display: none;
+  }
+  #my_resume .education,
+  #my_resume .experience {
+    padding-right: 12p;
+    padding-left: 12px;
   }
 }
 .btn-custom-blue, .btn-custom-dark {

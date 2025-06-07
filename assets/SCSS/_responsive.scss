@@ -8,6 +8,12 @@
             padding-right: 12px;
         }
      }
+
+     #my_resume {
+        .experience {
+            margin-top: 100px;
+        }
+     }
 }
 
 @media (min-width: 1400px) {
@@ -107,6 +113,38 @@
             &:first-child {
                 margin-bottom: 16px;
             }
+        }
+    }
+
+    #my_resume {
+        .items {
+            .item {
+                position: relative;
+                
+                .icon {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 2;
+                    left: -23px;
+                    margin-top: 0;
+                    background: rgba($secondary, 0.75);
+
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                .box:before {
+                    display: none;
+                }
+            }
+        }
+
+        .education,
+        .experience {
+            padding-right: 12p;
+            padding-left: 12px;
         }
     }
 }
