@@ -1,3 +1,21 @@
 #my_work {
-    
+
+    .filters {
+        button {
+            background: black;
+            margin-right: 32px;
+            margin-top: 32px;
+            margin-bottom: 32px;
+
+        }
+    }
+    .work-items {
+        .item {
+            .wrap {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

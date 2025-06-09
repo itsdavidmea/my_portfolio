@@ -36,3 +36,20 @@ var options = {
         meteor.classList = 'meteor';
         document.querySelector('#home .meteor-shower').append(meteor);
     }
+
+
+ 
+
+const shuffleInstance = new Shuffle(document.querySelector('#my_work .work-items'), {
+  itemSelector: '.item',
+  
+});
+
+const filterButtons = document.querySelectorAll('#my_work .filters button')
+filterButtons.forEach((item) => {
+    item.addEventListener('click', worFilter)
+})
+
+function workFilter () {
+    console.log(filterButtons)
+}
