@@ -47,9 +47,36 @@ const shuffleInstance = new Shuffle(document.querySelector('#my_work .work-items
 
 const filterButtons = document.querySelectorAll('#my_work .filters button')
 filterButtons.forEach((item) => {
-    item.addEventListener('click', worFilter)
+    item.addEventListener('click', workFilter)
 })
 
 function workFilter () {
-    console.log(filterButtons)
+
+    const clickedButton = event.currentTarget;
+    const clickedButtonGroup= clickedButton.getAttribute('data-group');
+    const activeButton = document.querySelector('#my_work .filters button.active')
+    activeButton.classList.remove('active');
+    clickedButton.classList.add('active');
+    shuffleInstance.filter(clickedButtonGroup)
 }
+
+var workModal = new bootstrap.Modal(document.getElementById('workModal'))
+const workElements = document.querySelectorAll("#my_work .work-items .wrap");
+workModal.show(); //must be removed after design done 
+workElements.forEach((item) => {
+    item.addEventListener('click', function (){
+        workModal.show();
+    })
+})
+
+
+var workModalElement = document.getElementById('workModal')
+workModalElement.addEventListener('show.bs.modal', function (event){
+    document.getElementById('my_work').classList.add('blur');
+    document.getElementById('sidebar').classList.add('blur');
+})
+
+workModalElement.addEventListener('hide.bs.modal', function (event){
+    document.getElementById('my_work').classList.remove('blur');
+    document.getElementById('sidebar').classList.remove('blur');
+})
