@@ -1,5 +1,8 @@
 @media (max-width: 991px) {
-    
+    .modal .modal-dialog .modal-content .modal-body .modal-close-button {
+        right: 10px;
+        top: 10px;
+    }
 }
 
 @media (max-width: 1199px) { //0 to 1199px 
@@ -147,4 +150,22 @@
             padding-left: 12px;
         }
     }
+    
+
+        .modal .modal-dialog .modal-content .modal-body {
+            img {
+                height: unset;
+            }
+
+            .left {
+                padding-right: 0;
+
+            }
+
+            .right {
+                padding-left: 0;
+                padding-top: 32px;
+            }
+        }
+    
 }
