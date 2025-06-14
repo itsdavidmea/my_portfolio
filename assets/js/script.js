@@ -88,3 +88,20 @@ workModalElement.addEventListener('hide.bs.modal', function (event){
     document.getElementById('my_work').classList.remove('blur');
     document.getElementById('sidebar').classList.remove('blur');
 })
+
+
+
+let testimonialImages = document.querySelectorAll('#my_testimonial .images img');
+testimonialImages.forEach((item, index) => {
+    let position = index + 1;
+    item.addEventListener('click', function () {
+        document.querySelector('#my_testimonial .images img.active').classList.remove('active')
+        // the old way => document.querySelector('#my_testimonial .images img:nth-child('+position+')').classList.add('active')
+        document.querySelector(`#my_testimonial .images img:nth-child(${position})`).classList.add('active')
+
+
+        document.querySelector('#my_testimonial .comments .item.active').classList.remove('active')
+        document.querySelector(`#my_testimonial .comments .item:nth-child(${position})`).classList.add('active')
+    })
+
+})

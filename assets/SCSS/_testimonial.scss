@@ -1,0 +1,111 @@
+#my_testimonial {
+    padding-bottom: 50px;
+    background-image: url(../images/spiral.png);
+    background-repeat: no-repeat;
+    background-position: 30vw 200px;
+    min-height: 100vh;
+    .main-section {
+        .images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 173px;
+            align-items: center;
+            margin-bottom: 16px;
+
+            img {
+                width: 68px;
+                height: 68px;
+                margin-right: 16px;
+                margin-left: 16px;
+                opacity: 0.5;
+                border-radius: 50%;
+                margin-bottom: 22px;
+                margin-bottom: 6px;
+                cursor: pointer;
+                transition: opacity 0.3s, filter 0.3s;
+
+                &:hover {
+                    opacity: 1;
+                    filter: saturate(250%) sepia(0.3);
+                }
+                &.active {
+                    width: 90px;
+                    height: 90px;
+                    opacity: 1;
+                }
+            }
+        }
+
+        .comments {
+            text-align: center;
+            .item {
+                display: none;
+               
+               
+
+                &.active {
+                    display: inline-block;
+
+                    .box {
+                        background: rgba($secondary, 0.75);
+                        padding: 32px;
+                        position: relative;
+                        border-radius: 8px;
+    
+                        p {
+                            font-family:  'Playfair Display', serif;
+                            font-size: 24px;
+                            font-weight: 700;
+                            line-height: 42px;
+                            max-width: 710px;
+                             animation: scaleUp 1s;
+                        }
+
+                        span {
+                            font-size: 86px;
+                            color: $primary;
+                            line-height: 0;
+                            vertical-align: -32px;
+                        }
+
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            border-left: 9px solid transparent;
+                            border-right: 9px solid transparent;
+                            border-bottom: 9px solid rgba($secondary, 0.75); // Change color as needed
+                            top: -8px;
+                            
+                        }
+                    }
+
+
+                    .writer {
+
+                        margin-top: 32px;
+                        margin-bottom: 16px;
+                         animation: scaleUp 1s;
+                        span.field {
+                            color: $grey;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0) rotate(20deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
