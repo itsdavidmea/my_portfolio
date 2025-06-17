@@ -105,3 +105,20 @@ testimonialImages.forEach((item, index) => {
     })
 
 })
+
+let contactFromItems = document.querySelectorAll('#contact_me .form input, #contact_me .form textarea');
+//to select all the inputs and the textareas 
+contactFromItems.forEach((item) => {
+
+    item.addEventListener('focus', function(){
+       item.parentElement.classList.add('focus') 
+    })
+
+    item.addEventListener('blur', function(){
+        if (!item.value) {
+
+            item.parentElement.classList.remove('focus') 
+        }
+    })
+})
+

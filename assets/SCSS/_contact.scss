@@ -2,5 +2,57 @@
 
     .container {
         margin-top: 123px;
+
+        .form {
+            padding-right: 69px;
+
+
+
+            .form-item {
+
+                position: relative;
+
+                &.focus {
+                    label {
+                        top: 0;
+                        font-size: 12px;
+
+                    }
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    width: 100%;
+                    background: $secondary_grey;
+                    bottom: 0;
+                    left: 0;
+                }
+
+                label {
+                    position: absolute;
+                    top: 17px;
+                    color: $grey;
+                    transition: all 0.3s;
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                    background: transparent;
+                    outline: none;
+                    border: none;
+                    
+                    padding: 16px 0;
+
+
+                }
+            }
+        }
+
+        .info {
+            padding-left: 69px;
+        }
     }
 }
