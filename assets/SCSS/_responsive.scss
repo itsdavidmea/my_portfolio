@@ -3,6 +3,15 @@
         right: 10px;
         top: 10px;
     }
+
+    #contact_me {
+        
+        .container {
+            .info {
+                margin-top: 50px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1199px) { //0 to 1199px 
@@ -15,6 +24,19 @@
      #my_resume {
         .experience {
             margin-top: 100px;
+        }
+     }
+
+     #contact_me {
+       
+        .container {
+            .form {
+                padding-right: 12px;
+            }
+
+            .info {
+                padding-left: 12px;
+            }
         }
      }
 }
@@ -168,4 +190,26 @@
             }
         }
     
+    #contact_me {
+        .container {
+            .info {
+                .item {
+                    // when its not in column, you should use justify content 
+                    flex-direction: column; // because flex direction is column, you should use text-align and align items
+                    text-align: center; 
+                    align-items: center ;
+                    margin-bottom: 32px;
+
+                    i {
+                        margin-right: 0;
+                        margin-bottom: 8px;
+                    }
+
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
