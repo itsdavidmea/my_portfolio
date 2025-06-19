@@ -30,8 +30,13 @@ p {
 
 body {
     background: $dark_bg;
+    transition: all 0.3s;
 }
 
 * {
     color: #fff; //assigning the white color to all the text in the website 
+}
+
+html {
+    --bg-shape: url(/assets/images/spiral.png);
 }

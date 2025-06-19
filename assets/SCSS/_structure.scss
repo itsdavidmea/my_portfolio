@@ -22,6 +22,10 @@ main {
             img {
                 position: absolute;
                 left: -50px;
+
+                &[src="assets/images/header-light.png"] {
+                    display: none;
+                }
             }
         }
 
